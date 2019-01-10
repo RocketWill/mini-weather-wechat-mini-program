@@ -1,0 +1,19 @@
+<view class="content">
+  <view class="info">
+    <view class="city">{{addressComponent.city}}</view>
+    <view class="temp">{{weather.wendu}}℃</view>
+    <view class="aqi">AQI: {{weather.aqi}}</view>
+    <view class="weather">{{weather.ganmao}}</view>
+    
+  </view>
+  <view class="forecast" >
+    <view class="next-day"  wx:key="{{index}}" wx:for="{{weather.forecast}}" >
+      <view class="detail f-date">{{item.date}}</view>
+      <view class="detail">{{item.type}}</view>
+      <view class="detail">{{item.hight}}</view>
+      <view class="detail">{{item.low}}</view>
+      <view class="detail">{{item.fengxiang}}</view>
+    </view>
+  </view>
+  <p class="copyright">程詠 2018.12.18</p>
+</view>
